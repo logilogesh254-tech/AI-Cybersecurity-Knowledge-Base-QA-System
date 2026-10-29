@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI Cybersecurity Knowledge Base Q&A System">
+  <title>AI Cybersecurity Knowledge Base Q&A System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand-mark" aria-hidden="true">⌘</div>
+      <div>
+        <p class="eyebrow">CYBERSECURITY LEARNING ASSISTANT</p>
+        <h1>CyberSafe <span>Q&amp;A</span></h1>
+      </div>
+      <div class="status"><span class="status-dot"></span> Knowledge Base Online</div>
+    </header>
+
+    <main class="main-grid">
+      <aside class="sidebar">
+        <div class="side-heading">Explore topics</div>
+        <button class="topic-btn active" data-question="What is cybersecurity?"><span>◈</span> Cybersecurity basics</button>
+        <button class="topic-btn" data-question="What is phishing?"><span>✉</span> Phishing</button>
+        <button class="topic-btn" data-question="How do I create a strong password?"><span>▣</span> Password safety</button>
+        <button class="topic-btn" data-question="What is malware?"><span>⌁</span> Malware</button>
+        <button class="topic-btn" data-question="What is a firewall?"><span>⬡</span> Firewalls</button>
+        <button class="topic-btn" data-question="What is multi-factor authentication?"><span>◉</span> MFA</button>
+        <div class="sidebar-note">
+          <strong>Learning tip</strong>
+          <p>Ask a question about online safety, networks, threats, or security best practices.</p>
+        </div>
+      </aside>
+
+      <section class="chat-panel" aria-label="Cybersecurity question and answer chat">
+        <div class="chat-header">
+          <div class="bot-avatar">CS</div>
+          <div><h2>Cybersecurity Assistant</h2><p>Answers from a curated local knowledge base</p></div>
+          <button id="clearChat" class="icon-btn" title="Clear conversation" aria-label="Clear conversation">↻</button>
+        </div>
+        <div id="chatMessages" class="messages" aria-live="polite">
+          <div class="welcome-card">
+            <div class="welcome-icon">✦</div>
+            <p class="welcome-label">WELCOME</p>
+            <h2>Welcome to AI Cyber Security Knowledge Based Questions and Answers System</h2>
+            <p>I’m your cybersecurity learning assistant. Ask me about cybersecurity concepts and safe digital practices.</p>
+            <div class="suggestion-row">
+              <button class="suggestion" data-question="What is cybersecurity?">What is cybersecurity?</button>
+              <button class="suggestion" data-question="How can I avoid phishing?">Avoid phishing</button>
+              <button class="suggestion" data-question="What is ethical hacking?">Ethical hacking</button>
+            </div>
+          </div>
+        </div>
+        <form id="chatForm" class="composer">
+          <label class="sr-only" for="questionInput">Ask a cybersecurity question</label>
+          <input id="questionInput" type="text" placeholder="Ask a cybersecurity question..." autocomplete="off" required>
+          <button type="submit" class="send-btn">Ask <span>➤</span></button>
+        </form>
+        <p class="disclaimer">Educational information only. Never share passwords, verification codes, or private data.</p>
+      </section>
+    </main>
+    <footer>Built by <strong>Logesh</strong> · AI Cybersecurity Knowledge Base Q&amp;A System · Student project</footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
